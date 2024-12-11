@@ -1,4 +1,4 @@
-﻿# Windows Style | Introduction to Java
+﻿# Windows Style 98
 
 ![Website](https://img.shields.io/website?url=https%3A%2F%2Fjabaitech.github.io%2Fcomprog1-java-windows%2F&up_message=Online&up_color=green&down_message=Offline&down_color=red&style=for-the-badge&link=https%3A%2F%2Fjabaitech.github.io%2Fcomprog1-java-windows%2F) 
 
