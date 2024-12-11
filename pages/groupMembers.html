@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       @font-face {
+            font-family: 'Windows98Font';
+            src: url('../assets/windows98font.ttf')
+        }
+
+        body {
+            user-select: none;
+            padding: 0px;
+            font-family: 'Windows98Font';
+            background-color: rgb(37, 39, 40);
+            display: flex;
+            margin: 0;
+        }
+
+
+        img,
+        input {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            /*user-drag: none;*/
+        }
+
+        #title {
+            background-color: bisque;
+            padding-left: 25px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #card-aboutjava {
+            margin: auto;
+            text-align: center;
+        }
+
+        #logo {
+            width: 50%;
+            background-color: grey;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        #content {
+            font-size: 15px;
+        }
+
+        footer {
+            bottom: 0;
+            display: flexbox;
+            position: inherit;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+    <div id="card-aboutjava">
+        <div id="content">
+            <img id="logo" src="../images/collab.png">
+
+            <li>
+                <ol>Khlyon Yuan Chan Loja</ol>
+                <ol>Terence Montecillo</ol>
+                <ol>Lyka Santos</ol>
+                <ol>Shellwin Escorial</ol>
+                <ol>Harviey Santiago</ol>
+                <ol>Andrei Diama</ol>
+                <ol>Vien Garado</ol>
+                <ol>Final Grade: 100%</ol>
+            </li>
+
+            <br>
+            <ul style="color: grey; font-size: 15px;"><i>In collaboration with <b>Javarays</b> group | Made with
+                    friendship and pancit canton with san marino</i></ul>
+        </div>
+    </div>
+</body>
+
+</html>

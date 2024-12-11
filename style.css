@@ -1,0 +1,296 @@
+:root {
+    --iconSize: 50px;
+    --color_grey: 
+}
+
+@font-face {
+    font-family: 'Windows98Font';
+    src: url('./assets/windows98font.ttf')
+}
+
+body {
+    font-family: 'Windows98Font';
+    user-select: none;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #008080;
+}
+
+img, input {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    /*user-drag: none;*/
+}
+
+#mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    position: fixed;
+    width: fit-content;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    /* z-index: 999; */
+}
+
+#ICON {
+    width: var(--iconSize);
+    position: relative;
+    margin: auto;
+}
+
+/* .iconHolder:hover {
+    background-color: rgba(148, 198, 255, 0.274);
+} */
+
+.icon {
+    width: var(--iconSize);
+    position: relative;
+    display: flexbox;
+}
+
+a.iconHolder {
+    background-color: none;
+    height: 70px;
+    width: 70px;
+    display: grid;
+    align-content: center;
+    margin-bottom: 30px;
+    color: white;
+    padding: 5px;
+}
+
+p {
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+
+#mainContainer > button {
+    height: var(--iconSize);
+    width: var(--iconSize);
+}
+
+#bottomBar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+    align-items: center;
+    background-color: #c0c0c0;
+    border-top: 3px solid white;
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0 0px;
+}
+
+#tabs {
+    border-left: 2px solid black;
+    width: 100%;
+    width: 90%;
+}
+
+.appIcon {
+    margin-top: 6px;
+    float: left;
+    justify-self: left;
+}
+
+.windowsStartButton {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin-left: 5px;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    margin-right: auto;
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25px;
+}
+
+.windowsStartButton:active {
+    background-color: white;
+}
+
+#windowsIcon {
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 25%; */
+    width: 30px;
+    height: 30px;
+    pointer-events: none;
+}
+
+#windowsStartLabel {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+#bottomAppIcon {
+    float: left;
+    justify-self: start;
+    width: 35px;
+    height: 35px;
+}
+
+#bar {
+    color: white;
+    background-color: rgb(37, 37, 37);
+    user-select: none;
+    grid-column: 2 / 3;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 9px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    /*border-radius: 2px;*/
+    flex-grow: 1;
+    border: 1px solid gray;
+}
+
+#bar:focus {
+    outline-width: 0;
+}
+
+#timeContainer {
+    grid-column: 3 / 4;
+    justify-self: end;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 3px;
+    padding: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-top: 3px solid #868686;
+    border-left: 3px solid #868686;
+    border-bottom: 3px solid #f0f0f0;
+    border-right: 3px solid #f0f0f0;
+}
+
+#time {
+    display: block;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+#fullWindow {
+    background-color: #c0c0c0;
+    width: 70%;
+    height: fit-content;
+    max-width: 90%;
+    max-height: fit-content;
+    /* border: 1px solid black; */
+    position: relative;
+    margin: auto;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+#WINDOW_HOLDER {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 45px);
+}
+
+#window {
+    background-color: #c0c0c0;
+    overflow: hidden;
+    width: 100%;
+}
+
+#windowName {
+    float: left;
+    margin-right: auto;
+    margin-left: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+#topbar> button {
+    display: block;
+    color: black;
+    width: 25px;
+    height: 20px;
+    font-size: 10px;
+    font-weight: bold;
+    /* cursor: pointer; */
+    text-align: center;
+    margin-right: 5px;
+    float: right;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    background-color: #c0c0c0;
+}
+
+#topbarIcon {
+    width: 20px;
+    margin-left: 10px;
+}
+
+#closeWindowButton {
+    font-family: 'Windows98Font';
+
+    
+}
+
+#closeWindowButton:active {
+    background-color: #ffffff;
+}
+
+
+#window > iframe {
+    overflow: auto;
+    width: 100%;
+    height: 80vh;
+    border: none;
+    display: inline-block;
+}
+
+#topbar {
+    /* OLD
+    height: 35px;
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: inherit;
+    background-color: grey;
+    */
+
+    display: flex;
+    justify-content: flex-end;
+    margin: 3px;
+    background: linear-gradient(90deg, rgba(0,16,181,1) 0%, rgba(0,237,255,1) 100%);
+    border-bottom: 1px solid #a7a7a7;
+    height: 25px;
+    align-items: center; 
+    padding: 0;
+}

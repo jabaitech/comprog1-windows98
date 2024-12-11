@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wendos 98</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/pageicon.png">
+    <script src="./script.js"></script>
+</head>
+
+<body oncontextmenu="return false;">
+    <div id="mainContainer">
+        <a class="iconHolder" onclick="changeIframe('', 'Placeholder', './images/winLogo.png')">
+            <img id="ICON" src="./images/winLogo.png">
+            <p>Test</p>
+        </a>
+
+        <!--CONTINUE-->
+
+    </div>
+
+    <div id="WINDOW_HOLDER">
+        <div id="fullWindow">
+            <div id="topbar">
+                <img id="topbarIcon" src="./images/roblox.png">
+                <p id="windowName">Window Name</p>
+                <button id="closeWindowButton" onclick="closeWindow()">X</button>
+            </div>
+            <div id="window">
+                <iframe name="FRAME" id="content-iframe" frameborder="0" scrolling="no" allowTransparency="no" src=""></iframe>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <div id="bottomBar">
+        <div class="windowsStartButton" onclick="alert('Error! (Tinatamad lang talaga kami gawin to)')">
+            <img id="windowsIcon" src="./images/winLogo.png" />
+            <p id="windowsStartLabel">Start</p>
+        </div>
+        
+        
+        <span id="tabs"></span>
+       
+        <div id="timeContainer">
+            <a id="time">7:00 AM</a>
+        </div>
+    </div>
+</body>
+
+</html>
