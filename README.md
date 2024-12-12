@@ -1,7 +1,7 @@
 ﻿# Windows Style | Introduction to Java and MIL
 
-> [!Reused]
-> From Wendos Teen
+> [!NOTE]
+> Re-used from Wendos Teen
 
 > [!NOTE]
 > This is a school project
