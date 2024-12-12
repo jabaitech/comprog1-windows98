@@ -203,13 +203,18 @@ p {
     height: fit-content;
     max-width: 90%;
     max-height: fit-content;
-    /* border: 1px solid black; */
+    display: flex;
     position: relative;
     margin: auto;
     border-top: 3px solid white;
     border-left: 3px solid white;
     border-right: 3px solid rgb(0, 0, 0);
     border-bottom: 3px solid rgb(0, 0, 0);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 #WINDOW_HOLDER {
@@ -217,12 +222,15 @@ p {
     align-items: center;
     width: 100%;
     height: calc(100vh - 45px);
+    /* margin-left: 2px; */
+    /* margin-right: 2px; */
 }
 
 #window {
     background-color: #c0c0c0;
     overflow: hidden;
-    width: 100%;
+    margin-left: 3px;
+    margin-right: 3px;  
 }
 
 #windowName {
@@ -266,13 +274,48 @@ p {
     background-color: #ffffff;
 }
 
+/* TOP BAR MODIFICATION */
+#navBar {
+    position: relative;
+    height: 25px;   
+}
+
+#navBar>ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+    width: 99%;
+    position: absolute;
+    display: flex;
+    list-style-type: none;
+    background-color: #c0c0c0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+#navBar>ul>li {
+    margin-right: 20px;
+}
+
+#navBar > ul > li > a {
+    text-decoration: underline;
+}
 
 #window > iframe {
     overflow: auto;
-    width: 100%;
-    height: 80vh;
+    padding: 0;
+    margin: 0;
+    width: 99.5%;
+    height: 75vh;
     border: none;
     display: inline-block;
+
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+    border-left: 3px solid rgb(0, 0, 0);
+    border-top: 3px solid rgb(0, 0, 0);
 }
 
 #topbar {
@@ -288,7 +331,7 @@ p {
     display: flex;
     justify-content: flex-end;
     margin: 3px;
-    background: linear-gradient(90deg, rgba(0,16,181,1) 0%, rgba(0,237,255,1) 100%);
+    background: rgba(0,16,181,1);
     border-bottom: 1px solid #a7a7a7;
     height: 25px;
     align-items: center; 

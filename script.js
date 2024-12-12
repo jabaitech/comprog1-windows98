@@ -1,4 +1,5 @@
 /*
+    From original wendos10 / Less functions since less content
     Simplified and hardcoded kasi ang buggy ahhaha
 */
 let count = 0;
@@ -34,18 +35,9 @@ function updateTime() {
     document.getElementById("time").innerText = `${hours}:${minutes} ${ampm}`;
 }
 
-function updateDate() {
-    const now = new Date();
-    const month = String(now.getMonth() + 1).padStart(2, '0');
-    const day = String(now.getDate()).padStart(2, '0');
-    const year = now.getFullYear();
-    document.getElementById("date").innerText = `${month}/${day}/${year}`;
-}
-
 document.addEventListener("DOMContentLoaded", function () {
     closeWindow();
     updateTime();
-    updateDate();
     setInterval(updateTime, 60000);
 });
 

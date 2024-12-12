@@ -6,17 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wendos 98</title>
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./images/pageicon.png">
+    <link rel="icon" href="./images/winLogo.png">
     <script src="./script.js"></script>
 </head>
 
 <body oncontextmenu="return false;">
     <div id="mainContainer">
-        <a class="iconHolder" onclick="changeIframe('', 'Placeholder', './images/winLogo.png')">
-            <img id="ICON" src="./images/winLogo.png">
-            <p>Test</p>
+        <a class="iconHolder" onclick="changeIframe('./pages/README.html', 'README.txt', './images/notepad.png')">
+            <img id="ICON" src="./images/notepad.png">
+            <p id="iconLabel">README.txt</p>
         </a>
 
+
+        <a class="iconHolder" onclick="changeIframe('./pages/placeholder.html', 'part1.txt', './images/notepad.png')">
+            <img id="ICON" src="./images/notepad.png">
+            <p id="iconLabel">part1.txt</p>
+        </a>
         <!--CONTINUE-->
 
     </div>
@@ -24,12 +29,23 @@
     <div id="WINDOW_HOLDER">
         <div id="fullWindow">
             <div id="topbar">
-                <img id="topbarIcon" src="./images/roblox.png">
+                <img id="topbarIcon" src="">
                 <p id="windowName">Window Name</p>
                 <button id="closeWindowButton" onclick="closeWindow()">X</button>
             </div>
+            
+            <!--TOP NAVIGATION BAR MODIFICATION-->
+            <div id="navBar">
+                <ul id="navBarItems">
+                    <li><a>F</a>ile</li>
+                    <li><a>E</a>dit</li>
+                    <li><a>S</a>earch</li>
+                    <li><a>H</a>elp</li>
+                </ul>
+            </div>
+
             <div id="window">
-                <iframe name="FRAME" id="content-iframe" frameborder="0" scrolling="no" allowTransparency="no" src=""></iframe>
+                <iframe name="FRAME" id="content-iframe" frameborder="0" scrolling="no" allowTransparency="no" src="./pages/placeholder.html"></iframe>
             </div>
         </div>
         

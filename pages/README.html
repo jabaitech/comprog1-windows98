@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html oncontextmenu="return false;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Windows98Font';
+            src: url('../assets/windows98font.ttf')
+        }
+
+        body {
+            user-select: none;
+            padding: 0px;
+            padding-left: 10px;
+            font-family: 'Windows98Font';
+            background-color: #e6e6e6;
+            display: flex;
+            margin: 0;
+            left: 0;
+        }
+
+        img,
+        input {
+            -webkit-user-drag: none;
+            -khtml-user-drag: none;
+            -moz-user-drag: none;
+            -o-user-drag: none;
+            /*user-drag: none;*/
+        }
+
+        #content {
+            height: auto;
+        }
+
+        #membersList {
+            margin: 0px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+    <!--
+    <div id="sidebar">
+        <li>
+            <ul><p id="facebook">Facebook</p></ul>
+            <ul><img id="sidebar_profile" src="../images/pfp1.png"><p>Profile</p></ul>
+        </li>
+    </div>
+    -->
+
+    <div id="content">
+        <p>Members</p>
+        <ol id="membersList">
+            <li>Punto, Rionne</li>
+            <li>Hernandez, Nash</li>
+            <li>Seloterio, Kenjin</li>
+            <li>Loja, Yuan</li>
+            <li>Santos, Lyka</li>
+            <li>Felipe, John Marie</li>
+            <li>Montecillo, Terence</li>
+        </ol>
+    </div>
+</body>
+
+</html>
