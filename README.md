@@ -1,6 +1,6 @@
 ﻿# Windows Style | Introduction to Java and MIL
 
-> [Reused]
+> [!Reused]
 > From Wendos Teen
 
 > [!NOTE]
