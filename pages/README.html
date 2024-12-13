@@ -19,10 +19,42 @@
             display: flex;
             margin: 0;
             left: 0;
+            overflow-y: scroll;
         }
 
         html:hover {
             cursor: text;
+        }
+
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid rgb(0, 0, 0);
+            border-bottom: 2px solid rgb(0, 0, 0);
+
+            background: #c0c0c0;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a6a6a6;
+        }
+
+        ::-webkit-scrollbar-button:single-button {
+            background-color: #bbbbbb;
+            display: block;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            border-right: 2px solid rgb(0, 0, 0);
+            border-bottom: 2px solid rgb(0, 0, 0);
+            height: 20px;
         }
 
         img,
