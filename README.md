@@ -1,6 +1,6 @@
 ﻿# Windows98 Style | Visual Media
 
-![Static Badge](https://img.shields.io/badge/Project%20Length-27%~3Hours-informational?style=flat-square)
+![Static Badge](https://img.shields.io/badge/Project%20Length-27%3Hours-informational?style=flat-square)
 
 > [!NOTE]
 > This is a school project
