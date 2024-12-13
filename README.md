@@ -1,4 +1,4 @@
-﻿# Windows98 Style | Introduction to Java
+﻿# Windows98 Style | Visual Media
 
 > [!NOTE]
 > This is a school project
